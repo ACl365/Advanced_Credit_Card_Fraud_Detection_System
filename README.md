@@ -10,13 +10,13 @@ A robust, two-stage machine learning pipeline for high-accuracy credit card frau
 
 ## 📌 Overview
 
-This project implements an advanced machine learning pipeline for credit card fraud detection, emphasizing high recall and precision. The system features a two-stage detection process, combining ensemble methods with optimised thresholds for superior performance in real-world deployment scenarios.
+This project implements an advanced machine learning pipeline for credit card fraud detection, emphasising high recall and precision. The system features a two-stage detection process, combining ensemble methods with optimised thresholds for superior performance in real-world deployment scenarios.
 
 ![Project Banner](https://raw.githubusercontent.com/username/credit-card-fraud/main/assets/banner.png)
 
 ## 🔍 Key Features
 
-- **Two-Stage Fraud Detection Pipeline**: Implements a specialized approach that prioritizes recall in the first stage and precision in the second stage
+- **Two-Stage Fraud Detection Pipeline**: Implements a specialised approach that prioritises recall in the first stage and precision in the second stage
 - **Stacked Ensemble Architecture**: Combines multiple base models (Logistic Regression, Random Forest, XGBoost, etc.) with meta-learners to improve fraud detection accuracy
 - **Imbalanced Learning**: Addresses class imbalance using SMOTE (Synthetic Minority Over-sampling Technique)
 - **Optimised Metrics**: Focuses on fraud detection-relevant metrics like recall and AUC
@@ -185,7 +185,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 3. **Deep Learning Integration**:
    - Incorporate autoencoders for anomaly detection
-   - Explore recurrent neural networks for sequence modeling
+   - Explore recurrent neural networks for sequence modelling
 
 4. **Model Explainability**:
    - Add SHAP (SHapley Additive exPlanations) values for model interpretability
@@ -208,7 +208,7 @@ A: While accuracy is common for balanced classification problems, fraud detectio
 
 **Q: What is the two-stage approach and why is it effective?**
 A: The two-stage approach uses a high-recall model (Logistic Regression) in the first stage to catch as many potential fraudulent transactions as possible, followed by a high-precision model (XGBoost) in the second stage to reduce false positives. This approach is effective because:
-- It prioritizes catching all fraud (minimizing false negatives) which is critical for financial institutions
+- It prioritises catching all fraud (minimizing false negatives) which is critical for financial institutions
 - It reduces the operational burden of investigating false positives by applying a more precise filter in the second stage
 - It balances the trade-off between recall and precision better than a single model approach
 

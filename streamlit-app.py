@@ -350,7 +350,7 @@ elif page == "Sample Prediction":
                             st.subheader("Two-Stage Model Analysis")
                             st.info("""
                             The two-stage model combines high recall (Stage 1: Logistic Regression) with high precision
-                            (Stage 2: XGBoost) to optimize fraud detection performance.
+                            (Stage 2: XGBoost) to optimise fraud detection performance.
                             
                             - Stage 1 aims to catch all potential fraud (threshold = 0.3)
                             - Stage 2 reduces false positives (threshold = 0.7)
@@ -443,7 +443,7 @@ elif page == "Sample Prediction":
                             st.subheader("Two-Stage Model Analysis")
                             st.info("""
                             The two-stage model combines high recall (Stage 1: Logistic Regression) with high precision
-                            (Stage 2: XGBoost) to optimize fraud detection performance.
+                            (Stage 2: XGBoost) to optimise fraud detection performance.
                             
                             - Stage 1 aims to catch all potential fraud (threshold = 0.3)
                             - Stage 2 reduces false positives (threshold = 0.7)
@@ -496,34 +496,5 @@ elif page == "About":
     
     ### Two-Stage Fraud Detection Approach
     
-    The system implements a specialized two-stage approach optimized for credit card fraud detection:
-    
-    1. **Stage 1 (High Recall)**: Uses Logistic Regression with a lower threshold (0.3) to catch as many potential fraudulent transactions as possible
-    2. **Stage 2 (High Precision)**: Transactions flagged by Stage 1 are passed to XGBoost with a higher threshold (0.7) to reduce false positives
-    
-    This approach prioritizes recall (catching all fraud) while using a second stage to minimize false positives, balancing the operational costs of fraud investigation with the need to catch all fraudulent activity.
-    
-    ### Key Features
-    
-    - **Two-stage detection pipeline**: Optimizes the trade-off between catching all fraud and minimizing false positives
-    - **Handles class imbalance**: Uses SMOTE (Synthetic Minority Over-sampling Technique) to address the imbalance between fraudulent and legitimate transactions
-    - **Optimises for relevant metrics**: Focuses on recall and AUC, which are critical in fraud detection
-    - **Ensemble approach**: Leverages the strengths of diverse models to improve overall performance
-    - **Feature scaling**: Standardises transaction amount and time features for better model performance
-    
-    ### Dataset
-    
-    The dataset used in this project contains anonymised credit card transactions, with features transformed using PCA for privacy protection.
-    
-    ### Contact
-    
-    For more information, please contact:
-    
-    - **Email**: alex@example.com
-    - **GitHub**: [github.com/alexuser](https://github.com/alexuser)
-    - **LinkedIn**: [linkedin.com/in/alexuser](https://linkedin.com/in/alexuser)
+    The system implements a specialized two-stage approach optimised for credit card fraud detection:
     """)
-
-# Footer
-st.markdown("---")
-st.markdown("© 2025 Credit Card Fraud Detection Project | Created by Alex")

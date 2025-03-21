@@ -99,9 +99,9 @@ meta_train = np.column_stack((logistic_oof_train, rf_oof_train, gb_oof_train, xg
 meta_test = np.column_stack((logistic_test_preds, rf_test_preds, gb_test_preds, xgb_test_preds))
 ```
 
-### 2.3 Hyperparameter Optimization
+### 2.3 Hyperparameter Optimisation
 
-We employed Grid Search with cross-validation to optimize key parameters of the meta-learners:
+We employed Grid Search with cross-validation to optimise key parameters of the meta-learners:
 
 ```python
 param_grid_logistic = {'C': [0.1, 1, 10]}
